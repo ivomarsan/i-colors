@@ -1,0 +1,44 @@
+@import '../assets/colors.scss';
+@import './isColor.scss';
+
+// is-background
+.is-background-red {
+  @extend .is-color-white;
+  background-color: $red;
+}
+.is-background-pink {
+  @extend .is-color-white;
+  background-color: $pink;
+}
+.is-background-blue {
+  @extend .is-color-white;
+  background-color: $blue;
+}
+.is-background-gray {
+  @extend .is-color-black;
+  background-color: $gray;
+}
+.is-background-black {
+  @extend .is-color-white;
+  background-color: $black;
+}
+.is-background-white {
+  @extend .is-color-black;
+  background-color: $white;
+}
+.is-background-green {
+  @extend .is-color-white;
+  background-color: $green;
+}
+.is-background-purple {
+  @extend .is-color-white;
+  background-color: $purple;
+}
+.is-background-yellow {
+  @extend .is-color-black;
+  background-color: $yellow;
+}
+.is-background-orange {
+  @extend .is-color-black;
+  background-color: $orange;
+}

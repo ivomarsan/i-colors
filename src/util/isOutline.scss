@@ -1,0 +1,44 @@
+@import '../assets/colors.scss';
+@import './isColor.scss';
+
+// is-outline
+.is-outline-red {
+  @extend .is-color-red;
+  border-color: $red;
+}
+.is-outline-pink {
+  @extend .is-color-pink;
+  border-color: $pink;
+}
+.is-outline-blue {
+  @extend .is-color-blue;
+  border-color: $blue;
+}
+.is-outline-gray {
+  @extend .is-color-gray;
+  border-color: $gray;
+}
+.is-outline-black {
+  @extend .is-color-black;
+  border-color: $black;
+}
+.is-outline-white {
+  @extend .is-color-white;
+  border-color: $white;
+}
+.is-outline-green {
+  @extend .is-color-green;
+  border-color: $green;
+}
+.is-outline-purple {
+  @extend .is-color-purple;
+  border-color: $purple;
+}
+.is-outline-yellow {
+  @extend .is-color-yellow;
+  border-color: $yellow;
+}
+.is-outline-orange {
+  @extend .is-color-orange;
+  border-color: $orange;
+}
