@@ -42,7 +42,9 @@ Inside `package.json` has been declared
 ```
 But if you need, just use like
 ``` html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/i-colors@0.0.0/dist/i-colors.css">
+<link rel="stylesheet" type="text/css" href="node-modules/i-colors/dist/i-colors.css">
+<!-- Or -->
+<style lang="css" src="node-modules/i-colors/dist/i-colors.css" scoped></style>
 <!-- Or if you want -->
 <script src="node-modules/i-colors/dist/i-colors.css"></script>
 ```
