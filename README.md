@@ -41,14 +41,14 @@ Inside `package.json` has been declared
 }
 ```
 But if you need, just use like
-``` html
+<!-- ``` html
 <link rel="stylesheet" type="text/css" href="node-modules/i-colors/dist/i-colors.css">
-<!-- Or -->
+<!-- Or -- >
 <style lang="css" src="node-modules/i-colors/dist/i-colors.css" scoped></style>
-<!-- Or if you want -->
+<!-- Or if you want -- >
 <script src="node-modules/i-colors/dist/i-colors.css"></script>
 ```
-Or also on this way
+Or also on this way -->
 ``` js
 import 'i-colors/dist/i-colors.css'
 
