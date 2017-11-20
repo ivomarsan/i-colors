@@ -16,3 +16,4 @@ yarn-error.log
 .babelrc
 gulpfile.babel.js
 src/
+package-lock.json

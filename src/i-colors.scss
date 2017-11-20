@@ -5,7 +5,8 @@
 @import './util/isBackground.scss';
 
 a,
-button {
+button,
+.i-colors {
   min-width: 0;
   min-height: $button-height;
   line-height: $button-height;
@@ -29,8 +30,8 @@ button {
   font-weight: 500;
   letter-spacing: inherit;
   text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
   vertical-align: top;
   white-space: nowrap;
   backface-visibility: hidden;
@@ -48,33 +49,29 @@ button {
     text-decoration: none;
 
     &:not([disabled]) {
-      &:not(.is-background-green, .is-background-red, .is-background-blue, .is-background-gray, .is-background-pink, .is-background-orange, .is-background-purple, .is-background-yellow, .is-background-white, .is-background-black) {
+      &:not(.is-background-red, .is-background-pink, .is-background-blue, .is-background-gray, .is-background-black, .is-background-white, .is-background-green, .is-background-purple, .is-background-yellow, .is-background-orange) {
         background-color: darken($white, 5%);
       }
-
-      &.is-background-green,
       &.is-background-red,
+      &.is-background-pink,
       &.is-background-blue,
       &.is-background-gray,
-      &.is-background-pink,
-      &.is-background-orange,
+      &.is-background-black,
+      &.is-background-white,
+      &.is-background-green,
       &.is-background-purple,
       &.is-background-yellow,
-      &.is-background-white,
-      &.is-background-black {
+      &.is-background-orange {
         opacity: 0.8;
       }
     }
   }
-
   &:active:not([disabled]) {
     transform: scale(1.1);
   }
-
   &.is-shadow:not([disabled]) {
     box-shadow: $material-shadow-2dp;
   }
-
   &.md-icon-button,
   &.md-fab {
     .md-icon {
@@ -85,7 +82,6 @@ button {
       left: 0;
     }
   }
-
   &.md-icon-button {
     width: $button-height;
     min-width: $button-height;
@@ -95,14 +91,12 @@ button {
     margin: 0 6px;
     padding: 4px;
     border-radius: 50%;
-
     &:not([disabled]) {
       &:hover {
         background: none;
       }
     }
   }
-
   &.md-fab {
     width: $button-fab-size;
     height: $button-fab-size;
@@ -115,47 +109,39 @@ button {
     background-clip: padding-box;
     transition: $swift-ease-out;
     transition-property: background-color, box-shadow, transform;
-
     &:hover,
     &:focus {
       box-shadow: $material-shadow-5dp;
     }
-
     &.md-mini {
       width: $button-fab-size-mini;
       height: $button-fab-size-mini;
       line-height: $button-fab-size-mini;
     }
   }
-
   &[disabled] {
     color: rgba($black, 0.26);
     cursor: default;
     pointer-events: none;
-
     &.is-shadow,
     &.md-fab {
       background-color: rgba($black, 0.12);
     }
-
     &.md-fab {
       box-shadow: none;
     }
   }
-
   &:after {
     transition: $swift-ease-out;
   }
 }
-
 // .md-button.md-icon-button,
 // .md-button.md-fab {
-//   .md-icon {
-//     color: inherit;
-//     display: block;
-//   }
+// .md-icon {
+// color: inherit;
+// display: block;
 // }
-
+// }
 .md-fab,
 .md-speed-dial {
   &.md-fab-top-left,
@@ -168,23 +154,19 @@ button {
     position: absolute;
     z-index: 10;
   }
-
   &.md-fab-top-left {
     top: $button-fab-space;
     left: $button-fab-space;
   }
-
   &.md-fab-top-center {
     top: $button-fab-space;
     left: 50%;
     transform: translateX(-50%);
   }
-
   &.md-fab-top-right {
     top: $button-fab-space;
     right: $button-fab-space;
   }
-
   &.md-fab-bottom-left {
     bottom: $button-fab-space;
     left: $button-fab-space;
@@ -195,26 +177,21 @@ button {
     left: 50%;
     transform: translateX(-50%);
   }
-
   &.md-fab-bottom-right {
     right: $button-fab-space;
     bottom: $button-fab-space;
   }
 }
-
 .md-button-tooltip {
   &.md-tooltip-top {
     margin-top: -8px;
   }
-
   &.md-tooltip-right {
     margin-left: 8px;
   }
-
   &.md-tooltip-bottom {
     margin-top: 8px;
   }
-
   &.md-tooltip-left {
     margin-left: -8px;
   }

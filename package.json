@@ -1,7 +1,7 @@
 {
   "name": "i-colors",
-  "version": "1.0.2",
-  "description": "A tiny css librarie to use inside my i-components",
+  "version": "1.0.3",
+  "description": "A tiny css library to use inside my i-components",
   "author": "ivomarsan <ivomarlucio@gmail.com>",
   "license": "ISC",
   "style": "dist/i-colors.css",
@@ -10,7 +10,7 @@
     "gulp": "gulp sass",
     "start": "npm run gulp"
   },
-  "keywords": ["css", "material design", "ivomarsan"],
+  "keywords": ["css", "material design"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ivomarsan/i-colors.git"
