@@ -30,7 +30,7 @@ button,
   font-weight: 500;
   letter-spacing: inherit;
   text-align: center;
-  text-transform: uppercase !important;
+  text-transform: none;
   text-decoration: none !important;
   vertical-align: top;
   white-space: nowrap;
@@ -45,26 +45,23 @@ button,
     border: 0;
   }
 
-  &:hover {
-    text-decoration: none;
-
-    &:not([disabled]) {
-      &:not(.is-background-red, .is-background-pink, .is-background-blue, .is-background-gray, .is-background-black, .is-background-white, .is-background-green, .is-background-purple, .is-background-yellow, .is-background-orange) {
-        background-color: darken($white, 5%);
-      }
-      &.is-background-red,
-      &.is-background-pink,
-      &.is-background-blue,
-      &.is-background-gray,
-      &.is-background-black,
-      &.is-background-white,
-      &.is-background-green,
-      &.is-background-purple,
-      &.is-background-yellow,
-      &.is-background-orange {
-        opacity: 0.8;
-      }
+  &[disabled] {
+    @extend .is-color-gray;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: lighten($gray, 20%);
+    background-color: lighten($gray, 20%);
+    &.is-shadow,
+    &.md-fab {
+      background-color: rgba($black, 0.12);
     }
+    &.md-fab {
+      box-shadow: none;
+    }
+  }
+  &:hover:not([disabled]) {
+    text-decoration: none;
+    background-color: lighten($gray, 25%);
   }
   &:active:not([disabled]) {
     transform: scale(1.1);
@@ -119,18 +116,6 @@ button,
       line-height: $button-fab-size-mini;
     }
   }
-  &[disabled] {
-    color: rgba($black, 0.26);
-    cursor: default;
-    pointer-events: none;
-    &.is-shadow,
-    &.md-fab {
-      background-color: rgba($black, 0.12);
-    }
-    &.md-fab {
-      box-shadow: none;
-    }
-  }
   &:after {
     transition: $swift-ease-out;
   }
@@ -171,7 +156,6 @@ button,
     bottom: $button-fab-space;
     left: $button-fab-space;
   }
-
   &.md-fab-bottom-center {
     bottom: $button-fab-space;
     left: 50%;

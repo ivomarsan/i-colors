@@ -4,41 +4,91 @@
 // is-background
 .is-background-red {
   @extend .is-color-white;
+  // @extend .is-outline-red;
   background-color: $red;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($red, 10%);
+  }
 }
 .is-background-pink {
   @extend .is-color-white;
+  // @extend .is-outline-pink;
   background-color: $pink;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($pink, 10%);
+  }
 }
 .is-background-blue {
   @extend .is-color-white;
+  // @extend .is-outline-blue;
   background-color: $blue;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($blue, 10%);
+  }
 }
 .is-background-gray {
   @extend .is-color-black;
+  // @extend .is-outline-gray;
   background-color: $gray;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($gray, 10%);
+  }
 }
 .is-background-black {
   @extend .is-color-white;
+  // @extend .is-outline-black;
   background-color: $black;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($black, 10%);
+  }
 }
 .is-background-white {
   @extend .is-color-black;
+  // @extend .is-outline-white;
   background-color: $white;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($white, 10%);
+  }
 }
 .is-background-green {
   @extend .is-color-white;
+  // @extend .is-outline-green;
   background-color: $green;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($green, 10%);
+  }
 }
 .is-background-purple {
   @extend .is-color-white;
+  // @extend .is-outline-purple;
   background-color: $purple;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($purple, 10%);
+  }
 }
 .is-background-yellow {
   @extend .is-color-black;
+  // @extend .is-outline-yellow;
   background-color: $yellow;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($yellow, 10%);
+  }
 }
 .is-background-orange {
   @extend .is-color-black;
+  // @extend .is-outline-orange;
   background-color: $orange;
+
+  &:hover:not([disabled]) {
+    background-color: lighten($orange, 10%);
+  }
 }

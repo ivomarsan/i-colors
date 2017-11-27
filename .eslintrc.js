@@ -3,5 +3,7 @@ module.exports = {
   env: {
     browser: true
   },
-  rules: {}
+  rules: {
+    'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }]
+  }
 }

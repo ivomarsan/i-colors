@@ -5,40 +5,80 @@
 .is-outline-red {
   @extend .is-color-red;
   border-color: $red;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($red, 10%);
+  }
 }
 .is-outline-pink {
   @extend .is-color-pink;
   border-color: $pink;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($pink, 10%);
+  }
 }
 .is-outline-blue {
   @extend .is-color-blue;
   border-color: $blue;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($blue, 10%);
+  }
 }
 .is-outline-gray {
   @extend .is-color-gray;
   border-color: $gray;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($gray, 10%);
+  }
 }
 .is-outline-black {
   @extend .is-color-black;
   border-color: $black;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($black, 10%);
+  }
 }
 .is-outline-white {
   @extend .is-color-white;
   border-color: $white;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($white, 10%);
+  }
 }
 .is-outline-green {
   @extend .is-color-green;
   border-color: $green;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($green, 10%);
+  }
 }
 .is-outline-purple {
   @extend .is-color-purple;
   border-color: $purple;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($purple, 10%);
+  }
 }
 .is-outline-yellow {
   @extend .is-color-yellow;
   border-color: $yellow;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($yellow, 10%);
+  }
 }
 .is-outline-orange {
   @extend .is-color-orange;
   border-color: $orange;
+
+  &:hover:not([disabled]) {
+    border-color: lighten($orange, 10%);
+  }
 }
